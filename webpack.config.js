@@ -17,5 +17,6 @@ module.exports = {
       loader: 'ts-loader',
       exclude: /node_modules/
     }]
-  }
+  },
+  externals: ['formik', 'react', 'react-dom']
 }

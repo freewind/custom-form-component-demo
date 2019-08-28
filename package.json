@@ -1,6 +1,6 @@
 {
   "name": "freewind--custom-form-component-demo",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "main": "./dist/bundle.js",
   "types": "./dist/MyCustomComponent.d.ts",
   "scripts": {
@@ -19,7 +19,7 @@
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3",
     "webpack-dev-server": "3.2.1",
-    "formik": "1.5.8",
+    "formik": "1.5.2",
     "react": "16.8.4",
     "react-dom": "16.8.4"
   },
