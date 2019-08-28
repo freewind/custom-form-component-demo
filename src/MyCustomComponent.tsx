@@ -55,8 +55,8 @@ export const MyCustomComponent: React.FunctionComponent<Props> = (props): JSX.El
 
 MyCustomComponent.displayName = 'MyCustomComponent';
 
-const connectedComponent = connect<OuterProps>(MyCustomComponent);
+export const MyConnectedCustomComponent = connect<OuterProps>(MyCustomComponent);
 
-console.log('### connectedComponent', connectedComponent);
+console.log('### connectedComponent', MyConnectedCustomComponent);
 
-export default connectedComponent;
+export default MyConnectedCustomComponent;
