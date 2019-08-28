@@ -16,5 +16,5 @@ declare type OuterProps = {
 };
 declare type Props = OuterProps & FormikPartProps;
 export declare const MyCustomComponent: React.FunctionComponent<Props>;
-declare const _default: React.ComponentType<OuterProps>;
-export default _default;
+declare const connectedComponent: React.ComponentType<OuterProps>;
+export default connectedComponent;
