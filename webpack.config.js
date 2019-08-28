@@ -1,9 +1,8 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './src/entry.tsx',
+  entry: './src/MyCustomComponent.tsx',
   devtool: "inline-source-map",
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -18,8 +17,5 @@ module.exports = {
       loader: 'ts-loader',
       exclude: /node_modules/
     }]
-  },
-  plugins: [
-    new HtmlWebpackPlugin()
-  ]
+  }
 }

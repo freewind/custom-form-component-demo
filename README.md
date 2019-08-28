@@ -1,9 +1,9 @@
-TypeScript React Hello World Demo
-=================================
+Custom Form Component Demo
+==========================
+
+Define a custom form component.
 
 ```
 npm install
 npm run demo
 ```
-
-It will open page on browser automatically.

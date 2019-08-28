@@ -1,10 +1,8 @@
 {
+  "name": "freewind--custom-form-component-demo",
+  "version": "0.1.0",
   "scripts": {
-    "demo": "webpack-dev-server --open"
-  },
-  "dependencies": {
-    "react": "16.8.4",
-    "react-dom": "16.8.4"
+    "build": "webpack"
   },
   "devDependencies": {
     "@types/node": "11.11.3",
@@ -18,6 +16,14 @@
     "typescript": "3.3.3333",
     "webpack": "4.29.6",
     "webpack-cli": "3.2.3",
-    "webpack-dev-server": "3.2.1"
+    "webpack-dev-server": "3.2.1",
+    "formik": "1.5.8",
+    "react": "16.8.4",
+    "react-dom": "16.8.4"
+  },
+  "peerDependencies": {
+    "formik": "*",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
   }
 }
