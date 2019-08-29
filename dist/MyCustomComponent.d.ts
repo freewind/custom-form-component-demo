@@ -3,7 +3,7 @@ declare type OuterProps = {
     dataProps: {
         label: string;
     };
-    stateProps: {
+    stateConfig: {
         statePath: string;
     };
 };

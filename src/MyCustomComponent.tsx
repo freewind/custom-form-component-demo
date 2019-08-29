@@ -13,7 +13,7 @@ type OuterProps = {
   dataProps: {
     label: string,
   }
-  stateProps: {
+  stateConfig: {
     statePath: string
   }
 };
@@ -26,11 +26,11 @@ const getValue = (values: UserInputFormState, statePath: string): string => {
 };
 
 const MyCustomComponent: React.FunctionComponent<Props> = (props): JSX.Element => {
-  const {dataProps, stateProps, formik} = props;
+  const {dataProps, stateConfig, formik} = props;
   const {values, setFieldValue} = formik;
 
   const {label} = dataProps;
-  const {statePath} = stateProps;
+  const {statePath} = stateConfig;
 
   const value = getValue(values, statePath);
 

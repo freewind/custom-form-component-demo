@@ -10,10 +10,10 @@ var getValue = function (values, statePath) {
     return inputValue && inputValue.toString();
 };
 var MyCustomComponent = function (props) {
-    var dataProps = props.dataProps, stateProps = props.stateProps, formik = props.formik;
+    var dataProps = props.dataProps, stateConfig = props.stateConfig, formik = props.formik;
     var values = formik.values, setFieldValue = formik.setFieldValue;
     var label = dataProps.label;
-    var statePath = stateProps.statePath;
+    var statePath = stateConfig.statePath;
     var value = getValue(values, statePath);
     function onChange(value) {
         setFieldValue(statePath, value);
