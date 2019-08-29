@@ -16,20 +16,14 @@ var MyCustomComponent = function (props) {
     var statePath = stateConfig.statePath;
     var value = getValue(values, statePath);
     function onChange(value) {
-        setFieldValue(statePath, value);
+        var items = value.split(',').map(function (it) { return it.trim(); });
+        setFieldValue(statePath, items);
     }
-    return (React.createElement("div", null,
+    return (React.createElement("div", { style: { border: '3px solid red' } },
         React.createElement("div", null,
             React.createElement("label", null,
                 label,
-                React.createElement("input", { type: 'text', value: value, onChange: function (event) { return onChange(event.target.value); } }))),
-        React.createElement("div", null,
-            React.createElement("label", null,
-                React.createElement("input", { type: 'radio', checked: true }),
-                "Or"),
-            React.createElement("label", null,
-                React.createElement("input", { type: 'radio' }),
-                "Not"))));
+                React.createElement("input", { type: 'text', defaultValue: value, onChange: function (event) { return onChange(event.target.value); } })))));
 };
 MyCustomComponent.displayName = 'MyCustomComponent';
 var MyCustomComponent$1 = formik.connect(MyCustomComponent);

@@ -35,19 +35,16 @@ const MyCustomComponent: React.FunctionComponent<Props> = (props): JSX.Element =
   const value = getValue(values, statePath);
 
   function onChange(value: string): void {
-    setFieldValue(statePath, value);
+    const items = value.split(',').map(it => it.trim());
+    setFieldValue(statePath, items);
   }
 
   return (
-    <div>
+    <div style={{border: '3px solid red'}}>
       <div>
         <label>{label}
-          <input type='text' value={value} onChange={event => onChange(event.target.value)}/>
+          <input type='text' defaultValue={value} onChange={event => onChange(event.target.value)}/>
         </label>
-      </div>
-      <div>
-        <label><input type='radio' checked={true}/>Or</label>
-        <label><input type='radio'/>Not</label>
       </div>
     </div>
   );
