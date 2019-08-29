@@ -25,7 +25,7 @@ const getValue = (values: UserInputFormState, statePath: string): string => {
   return inputValue && inputValue.toString();
 };
 
-export const MyCustomComponent: React.FunctionComponent<Props> = (props): JSX.Element => {
+const MyCustomComponent: React.FunctionComponent<Props> = (props): JSX.Element => {
   const {dataProps, stateProps, formik} = props;
   const {values, setFieldValue} = formik;
 
@@ -55,8 +55,4 @@ export const MyCustomComponent: React.FunctionComponent<Props> = (props): JSX.El
 
 MyCustomComponent.displayName = 'MyCustomComponent';
 
-export const MyConnectedCustomComponent = connect<OuterProps>(MyCustomComponent);
-
-console.log('### connectedComponent', MyConnectedCustomComponent);
-
-export default MyConnectedCustomComponent;
+export default connect<OuterProps>(MyCustomComponent);
