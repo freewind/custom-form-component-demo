@@ -1,8 +1,8 @@
 {
   "name": "freewind--custom-form-component-demo",
-  "version": "0.6.0",
+  "version": "0.6.3",
   "main": "./dist/bundle.js",
-  "types": "./dist/MyCustomComponent.d.ts",
+  "types": "./dist/MyCustomMultiSelectComponent.d.ts",
   "scripts": {
     "dist": "rm -rf ./dist && rollup -c"
   },
@@ -13,6 +13,7 @@
     "css-loader": "2.1.1",
     "formik": "1.5.2",
     "html-webpack-plugin": "3.2.0",
+    "postcss-nested": "4.1.2",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "rollup": "1.7.0",

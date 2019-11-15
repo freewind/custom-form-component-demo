@@ -32,7 +32,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css = ".MyCustomMultiSelectComponent--root {\n\n  .legend {\n    font-family: latoRegular, verdana, sans-serif;\n    font-size: 13px;\n    font-weight: 400;\n  }\n\n  .body {\n\n    display: flex;\n    align-items: start;\n\n    img {\n    }\n\n    select {\n      font-family: verdana, sans-serif;\n      font-size: 11px;\n      font-stretch: 100%;\n\n      &.has-selection {\n        background-color: rgb(211, 226, 249);\n      }\n\n      option {\n        font-family: Arial;\n        font-size: 13px;\n        font-stretch: 100%;\n      }\n    }\n  }\n\n}\n";
+var css = ".MyCustomMultiSelectComponent--root .legend {\n    font-family: latoRegular, verdana, sans-serif;\n    font-size: 13px;\n    font-weight: 400;\n  }\n\n  .MyCustomMultiSelectComponent--root .body {\n\n    display: flex;\n    align-items: start;\n  }\n\n  .MyCustomMultiSelectComponent--root .body img {\n    }\n\n  .MyCustomMultiSelectComponent--root .body select {\n      font-family: verdana, sans-serif;\n      font-size: 11px;\n      font-stretch: 100%;\n    }\n\n  .MyCustomMultiSelectComponent--root .body select.has-selection {\n        background-color: rgb(211, 226, 249);\n      }\n\n  .MyCustomMultiSelectComponent--root .body select option {\n        font-family: Arial;\n        font-size: 13px;\n        font-stretch: 100%;\n      }\n";
 styleInject(css);
 
 var getValues = function (values, statePath) {
